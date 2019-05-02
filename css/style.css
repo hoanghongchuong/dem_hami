@@ -378,7 +378,7 @@ header{
 }
 .top-box .cate-child a{
     color: #393339;
-    font-size: 18px;
+    font-size: 16px;
     /*text-transform: uppercase;*/
 }
 .top-box .nav-tabs>li.active a{
@@ -411,15 +411,21 @@ header{
 	padding-bottom: 5px;
 }
 .read-more{
-	font-size: 19px;
+	font-size: 17px;
 	color: #7c7a7a;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.read-more span{
+    color: #f9c51c;
 }
 .name_product{
 	font-family: MyriaB;
 	font-size: 20px;
 	text-align: center;
-	padding-top: 10px;
-    padding-bottom: 10px;
+	/*padding-top: 10px;
+    padding-bottom: 10px;*/
 }
 .name_product a{
 	color: #000;
@@ -523,7 +529,7 @@ footer{
 }
 
 .news-letter{
-	margin-top: 40px;
+	/*margin-top: 40px;*/
     background: #2f7499;
     width: 100%;
     float: left;
@@ -549,12 +555,12 @@ footer{
     height: 25px;
     width: 18%;
     float: left;
-    background: #e2e2e2;
-    color: #000;
-    border:none;
+    background: transparent;
+    color: #fff;
+    border:1px solid #fff;
     margin-top: 8px;
     margin-bottom: 3px;
-    text-transform: uppercase;
+    /*text-transform: uppercase;*/
 }
 .title-newsletter{
 	color: #fff; text-transform: uppercase; font-size: 16px
@@ -773,7 +779,7 @@ footer{
     color: #fff;
     text-transform: uppercase;
     font-family: HelL;
-    font-size: 24px;
+    font-size: 20px;
     margin-bottom: 20px;
 }
 .f-title span{
@@ -807,4 +813,32 @@ footer{
     color: #fff;
     font-size: 22px;
     font-family: UVNR;
+}
+
+.menu-sidebar-child {
+    display: none;
+}
+.menu-sidebar li {
+    position: relative;
+}
+.menu-sidebar-child li a {
+    font-size: 16px;
+    color: #000;
+}
+.menu-sidebar-child li {
+    line-height: 43px;
+    padding-left: 40px;
+    border-bottom: 1px solid #939393;
+}
+.menu-sidebar  li:hover > .menu-sidebar-child{
+    display: block !important;
+    position: absolute;
+    left: 100%;
+    top: 0px;
+    width: 220px;
+    z-index: 9999999;
+    background: #fff;
+}
+.menu-sidebar-child li a:hover{
+    color: #1a6b8f;
 }
