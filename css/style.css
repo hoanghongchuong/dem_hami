@@ -648,8 +648,8 @@ footer{
     width: 100%;
     float: left;
     margin-bottom: 30px;
-    margin-top: 30px;
-    border-bottom: 1px solid #14793c;
+    /*margin-top: 30px;*/
+    /*border-bottom: 1px solid #14793c;*/
 }
 
 .content-cate-product .box-product-home {
@@ -667,8 +667,8 @@ footer{
     margin-bottom: 0px;
 }
 .title-cate h4 {
-    padding: 15px;
-    background: #d88e15;
+    /*padding: 15px;
+    background: #d88e15;*/
     margin-top: 0px;
     margin-bottom: 0px;
     color: #fff;
@@ -687,9 +687,9 @@ footer{
     border-bottom: 1px solid #d88e15;
 }
 .list-category a {
-    text-transform: uppercase;
-    color: #d88e15;
-    font-size: 16px;
+    /*text-transform: uppercase;*/
+    color: #000;
+    font-size: 18px;
     font-family: MyriaB;
 }
 .breadcrumbx{
@@ -699,6 +699,10 @@ footer{
     width: 100%;
     float: left;
     margin-bottom: 30px;
+}
+.list-item-product img{
+    width: 100%;
+    height: 217px;
 }
 .box-product-detail {
     margin-top: 30px;
