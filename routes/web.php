@@ -34,9 +34,8 @@ Route::get('san-pham/{alias}.html','IndexController@getProductDetail')->name('de
 Route::get('san-pham/{id}',['as'=>'getProductList', 'uses'=>'IndexController@getProductList']);
 Route::get('danh-muc/{alias}', 'IndexController@getProductByCate')->name('detailCategory');
 
-
-Route::get('hang-moi-ve', 'IndexController@newProduct');
-Route::get('ban-chay', 'IndexController@productSelling');
+Route::get('ho-tro','IndexController@hotro');
+Route::get('dich-vu','IndexController@service');
 
 Route::get('product/filter', 'IndexController@productFilder')->name('product.filter');
 
@@ -64,16 +63,15 @@ Route::post('cart/update',['as' => 'updateCart', 'uses' => 'IndexController@upda
 Route::get('xoa-gio-hang/{id}','IndexController@deleteCart');
 Route::post('gui-don-hang', ['as' =>'postOrder', 'uses'=> 'IndexController@postOrder']);
 Route::get('xoa-all','IndexController@deleteAllCart')->name('deleteCart');
-Route::get('dich-vu',['as'=>'getDichvu', 'uses'=>'IndexController@getDichvu']);
 Route::post('card/check',['as'=>'checkCard', 'uses'=>'IndexController@checkCard']);
 
 Route::get('tin-tuc',['as'=>'getListNews', 'uses'=>'IndexController@getNews']);
 Route::get('tin-tuc/{alias}.html',['as'=>'getNewsDetail', 'uses'=>'IndexController@getNewsDetail']);
 Route::get('tin-tuc/{alias}',['as'=>'getListNews', 'uses'=>'IndexController@getListNews']);
 
-Route::get('van-hoa-tra',['as'=>'getVanHoa', 'uses'=>'IndexController@getVanHoa']);
-Route::get('van-hoa-tra/{alias}.html',['as'=>'getVanHoaDetail', 'uses'=>'IndexController@getVanHoaDetail']);
-Route::get('van-hoa-tra/{alias}',['as'=>'getListVanHoa', 'uses'=>'IndexController@getListVanHoa']);
+Route::get('bang-gia',['as'=>'getBangGia', 'uses'=>'IndexController@getBangGia']);
+Route::get('bang-gia/{alias}.html',['as'=>'getBangGiaDetail', 'uses'=>'IndexController@getBangGiaDetail']);
+Route::get('bang-gia/{alias}',['as'=>'getListBangGia', 'uses'=>'IndexController@getListBangGia']);
 
 Route::get('{id}.html',['as'=>'getProductDetail', 'uses'=>'IndexController@getProductDetail']);
 Route::get('bai-viet/{id}.html',['as'=>'getBaiVietDetail', 'uses'=>'IndexController@getBaiVietDetail']);

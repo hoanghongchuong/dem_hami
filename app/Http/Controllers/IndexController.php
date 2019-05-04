@@ -53,8 +53,10 @@ class IndexController extends Controller {
 	{
 		
 		$news = DB::table('news')->where('status',1)->where('com','tin-tuc')->take(4)->orderBy('id','desc')->get();
-		$products = DB::table('products')->where('status',1)->take(20)->orderBy('id','desc')->get();
-		$categories_home = ProductCate::where('status',1)->where('com','san-pham')->where('parent_id',0)->orderBy('id','desc')->get();
+		$productHot = DB::table('products')->where('status',1)->where('noibat',1)->where('com','san-pham')->take(4)->orderBy('id','desc')->get();
+		$productSaleOf = DB::table('products')->where('status',1)->where('spbc',1)->where('com','san-pham')->take(4)->orderBy('id','desc')->get();
+		$productNew = DB::table('products')->where('status',1)->where('com','san-pham')->take(4)->orderBy('id','desc')->get();
+		$categories_home = ProductCate::where('status',1)->where('com','san-pham')->where('parent_id',0)->where('noibat',1)->orderBy('id','desc')->get();
 		
 		$slogans = DB::table('slogan')->get();
 		$setting =DB::table('setting')->select()->where('id',1)->get()->first();
@@ -65,7 +67,7 @@ class IndexController extends Controller {
 		$com = 'index';
 		// End cấu hình SEO
 		$img_share = asset('upload/hinhanh/'.$setting->photo);
-		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','products','categories_home','slogans','news','about'));
+		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','productHot','categories_home','slogans','news','about','productSaleOf','productNew'));
 	}
 	public function getProduct(Request $req)
 	{
@@ -217,6 +219,24 @@ class IndexController extends Controller {
 
 		return view('templates.about_tpl', compact('about','keyword','description','title','com'));
 	}
+	public function service()
+	{
+		$data = DB::table('about')->where('com','dich-vu')->first();
+		$com = 'dich-vu';
+		$title = $data->title ? $data->title : $data->name;
+		$description = $data->description ? $data->description : $data->name;
+		$keyword = $data->keyword ? $data->keyword : $data->name;
+		return view('templates.service', compact('com','data','title','description','keyword'));
+	}
+	public function hotro()
+	{
+		$data = DB::table('about')->where('com','ho-tro')->first();
+		$com = 'ho-tro';
+		$title = $data->title ? $data->title : $data->name;
+		$description = $data->description ? $data->description : $data->name;
+		$keyword = $data->keyword ? $data->keyword : $data->name;
+		return view('templates.hotro', compact('com','data','title','description','keyword'));
+	}
 	public function baogia()
 	{
 		$data = DB::table('about')->where('com','bao-gia')->first();
@@ -310,13 +330,53 @@ class IndexController extends Controller {
 		}
 		
 	}
-	public function getVanHoaDetail($id)
+	public function getBangGia()
 	{
-		$news_detail = DB::table('news')->select()->where('status',1)->where('com','van-hoa')->where('alias',$id)->first();
+		$tintuc = DB::table('news')->select()->where('status',1)->where('com','bang-gia')->orderby('id','desc')->get(2);		
+		$hot_news = DB::table('news')->where('status',1)->where('com','bang-gia')->where('noibat',1)->orderby('id','desc')->take(6)->get();
+		$com='bang-gia';
+		// Cấu hình SEO
+		$title = "Bảng giá";
+		$keyword = "Bảng giá";
+		$description = "Bảng giá";
+		$img_share = '';
+		// End cấu hình SEO
+		return view('templates.banggia', compact('tintuc','keyword','description','title','img_share','com','hot_news'));
+	}
+	public function getListBangGia($alias)
+	{
+		$tintuc_cate = DB::table('news_categories')->select()->where('status',1)->where('com','bang-gia')->where('alias',$alias)->get()->first();
+		$cateNews = DB::table('news_categories')->where('com','bang-gia')->get();
+		if(!empty($tintuc_cate)){
+			$tintuc = DB::table('news')->select()->where('status',1)->where('cate_id',$tintuc_cate->id)->orderBy('id','desc')->paginate(5);
+			$tintuc_moinhat_detail = DB::table('news')->select()->where('status',1)->where('com','bang-gia')->orderby('created_at','desc')->take(6)->get();
+			$hot_news = DB::table('news')->where('status',1)->where('com', 'bang-gia')->where('noibat',1)->orderBy('stt','asc')->take(5)->get();
+			$setting = Cache::get('setting');
+			if(!empty($tintuc_cate->title)){
+				$title = $tintuc_cate->title;
+			}else{
+				$title = $tintuc_cate->name;
+			}
+			$keyword = $tintuc_cate->keyword;
+			$description = $tintuc_cate->description;
+			$img_share = asset('upload/news/'.$tintuc_cate->photo);
+
+			// End cấu hình SEO
+			return view('templates.banggia_list', compact('tintuc','tintuc_cate','banner_danhmuc','keyword','description','title','img_share','tintuc_moinhat_detail','hot_news', 'cateNews'));
+		}else{
+			return redirect()->route('getErrorNotFount');
+		}
+
+	}
+	public function getBangGiaDetail($id)
+	{
+		$news_detail = DB::table('news')->select()->where('status',1)->where('com','bang-gia')->where('alias',$id)->first();
 		
 		if(!empty($news_detail)){			
-			$cate_pro = DB::table('product_categories')->where('status',1)->where('parent_id',0)->orderby('id','asc')->get();			
-			$com='van-hoa';
+			$cate_pro = DB::table('product_categories')->where('status',1)->where('parent_id',0)->orderby('id','asc')->get();
+			$newsSameCate = DB::table('news')->select()->where('status',1)->where('com','bang-gia')
+			->where('id','<>',$news_detail->id)->take(12)->get();			
+			$com='bang-gia';
 			$setting = Cache::get('setting');
 			// Cấu hình SEO
 			if(!empty($news_detail->title)){
@@ -328,7 +388,7 @@ class IndexController extends Controller {
 			$description = $news_detail->description;
 			$img_share = asset('upload/news/'.$news_detail->photo);
 
-			return view('templates.vanhoa_detail_tpl', compact('news_detail','com','keyword','description','title','img_share'));
+			return view('templates.banggia_detail_tpl', compact('news_detail','com','keyword','description','title','img_share','newsSameCate'));
 		}else{
 			return redirect()->route('getErrorNotFount');
 		}

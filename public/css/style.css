@@ -316,7 +316,7 @@ header{
 }
 .slider img{
 	width: 100%;
-	height: 100% !important;
+	height: 385px !important;
 }
 .slogan-home{
 	width: 100%;
@@ -420,10 +420,26 @@ header{
 .read-more span{
     color: #f9c51c;
 }
+.fix-animation{
+    overflow:hidden;
+}
+.fix-animation img{
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+.fix-animation:hover img {
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
 .name_product{
 	font-family: MyriaB;
 	font-size: 20px;
 	text-align: center;
+    height: 28px;
+    overflow: hidden;
+    margin-top: 15px;
 	/*padding-top: 10px;
     padding-bottom: 10px;*/
 }
@@ -580,6 +596,9 @@ footer{
 .slider-mobile{
 	width: 100%;
 	float: left;
+}
+.slider-mobile img{
+    width: 100%;
 }
 .box-about{
 	width: 100%;
@@ -845,4 +864,8 @@ footer{
 }
 .menu-sidebar-child li a:hover{
     color: #1a6b8f;
+}
+.content-box-page{
+    width: 100%;
+    float: left;
 }

@@ -2,6 +2,7 @@
     $setting = Cache::get('setting');
     $sliders = DB::table('slider')->where('com','gioi-thieu')->where('status',1)->get();
     $categories = \App\ProductCate::where('com','san-pham')->where('parent_id',0)->orderBy('id','desc')->get();
+    $cate_banggia = DB::table('news')->where('com','bang-gia')->get();
 ?>
 <header id="header" class="">
     <div class="container">
@@ -18,7 +19,7 @@
                             </a>
                             <div class="media-body">
                                 <h4 class="media-heading">Hotline (24/7)</h4>
-                                <p>0904441176</p>
+                                <p>{{$setting->phone}}</p>
                             </div>
                         </div>
                     </div>
@@ -74,24 +75,22 @@
             
             <li><a href="{{url('gioi-thieu')}}">Giới thiệu</a></li>
             <li>
-                <a href="{{ url('san-pham') }}">Sản phẩm mới về</a>
+                <a href="{{ url('san-pham') }}">Sản phẩm</a>
 
-                <!-- <a href="#menu2" data-toggle="collapse" class="_arrow-mobile"><i class="_icon fa fa-angle-down"></i></a>
+                <a href="#menu2" data-toggle="collapse" class="_arrow-mobile"><i class="_icon fa fa-angle-down"></i></a>
                 <ul class="collapse" id="menu2">
-                    <li><a href="#">Công trình 1</a></li>
-                    <li><a href="#">Công trình 1</a></li>
-                    <li><a href="#">Công trình 1</a></li>
-                    <li><a href="#">Công trình 1</a></li>
-                    <li><a href="#">Công trình 1</a></li>                       
-                </ul> -->
+                    @foreach($categories as $category)
+                    <li><a href="{{url('san-pham/'.$category->alias)}}">{{$category->name}}</a></li>
+                    @endforeach                      
+                </ul>
             </li>
             <li>
-                <a href="javascript:;">Bảng giá</a>
-                <i class="fa fa-angle-down"></i>
-                <ul class="vk-menu__child">                                
-                    <li><a href="#">Danh mục sản phẩm 1</a></li>
-                    <li><a href="#">Danh mục sản phẩm 1</a></li>
-                    <li><a href="#">Danh mục sản phẩm 1</a></li>                        
+                <a href="{{url('bang-gia')}}">Bảng giá</a>
+                <a href="#banggia" data-toggle="collapse" class="_arrow-mobile"><i class="_icon fa fa-angle-down"></i></a>
+                <ul class="collapse" id="banggia">                                
+                    @foreach($cate_banggia as $b)
+                    <li><a href="{{url('bang-gia/'.$b->alias.'.html')}}">{{$b->name}}</a></li>
+                    @endforeach                       
                 </ul>
             </li>
             <li><a href="{{url('dich-vu')}}">Dịch vụ</a></li>                            
@@ -102,13 +101,14 @@
     </nav>        
 </div>
 <div class="slider-mobile visible-xs">
-    <div id="carousel-id" class="carousel slide" data-ride="carousel">
-                
-        @foreach($sliders as $k=>$slider)
+    <div id="carousel-id" class="carousel slide" data-ride="carousel">                
+        <div class="carousel-inner">
+            @foreach($sliders as $k=>$slider)
             <div class="item @if($k==0) active @endif">
-                <img  alt="" src="{{asset('upload/hinhanh/'.$slider->photo)}}">                
+                <img  alt="" src="{{asset('upload/hinhanh/'.$slider->photo)}}">
             </div>
-        @endforeach
+            @endforeach
+        </div>
         <a class="left carousel-control" href="#carousel-id" data-slide="prev"><span class="glyphicon glyphicon-chevron-left"></span></a>
         <a class="right carousel-control" href="#carousel-id" data-slide="next"><span class="glyphicon glyphicon-chevron-right"></span></a>
     </div>
@@ -121,7 +121,7 @@
                 <li><a href="{{url('')}}">Trang chủ</a></li>
                 <li><a href="{{url('gioi-thieu')}}">Giới thiệu</a></li>
                 <li>
-                    <a href="">Sản phẩm mới</a>
+                    <a href="{{url('san-pham')}}">Sản phẩm mới</a>
                     <!-- <i class="fa fa-angle-down"></i>
                     <ul class="vk-menu__child">                                
                         <li><a href="#">Danh mục sản phẩm 1</a></li>
@@ -130,18 +130,18 @@
                     </ul> -->
                 </li>
                 <li>
-                    <a href="">Bảng giá</a>
+                    <a href="{{url('bang-gia')}}">Bảng giá</a>
                     <i class="fa fa-angle-down"></i>
                     <ul class="vk-menu__child">                                
-                        <li><a href="#">Danh mục sản phẩm 1</a></li>
-                        <li><a href="#">Danh mục sản phẩm 1</a></li>
-                        <li><a href="#">Danh mục sản phẩm 1</a></li>                        
+                        @foreach($cate_banggia as $b)
+                        <li><a href="{{url('bang-gia/'.$b->alias.'.html')}}">{{$b->name}}</a></li>
+                        @endforeach                        
                     </ul>
                 </li>
-                <li><a href="">Dịch vụ</a></li>                            
-                <li><a href="">Hỗ trợ</a></li>                            
-                <li><a href="">Tin tức</a></li>                            
-                <li><a href="">Liên hệ</a></li>
+                <li><a href="{{url('dich-vu')}}">Dịch vụ</a></li>                            
+                <li><a href="{{url('ho-tro')}}">Hỗ trợ</a></li>                            
+                <li><a href="{{url('tin-tuc')}}">Tin tức</a></li>                            
+                <li><a href="{{url('lien-he')}}">Liên hệ</a></li>
             </ul>
         </div>
         <div class="col-md-3">

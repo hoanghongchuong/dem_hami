@@ -164,11 +164,11 @@
 				    	</label>
 				    </div> -->
 			    	
-				    <!-- <div class="form-group">
+				    <div class="form-group">
 					    <label>
-				        	<input type="checkbox" name="spbc"> Sale off
+				        	<input type="checkbox" name="spbc"> Bán chạy
 				    	</label>
-				    </div> -->
+				    </div>
 			    </div>
 			    <div class="clearfix"></div>
 			    <div class="box-footer">

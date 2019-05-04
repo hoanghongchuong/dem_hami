@@ -11,7 +11,7 @@ class ProductCate extends Model {
 	public function getProductsAttribute()
     {
     	$categoryIdArray = $this->getChildCategories([$this->id]);
-        return \App\Products::whereIn('cate_id', $categoryIdArray)->paginate(2);
+        return \App\Products::whereIn('cate_id', $categoryIdArray)->take(4)->orderBy('id','desc')->get();
     }
 
     protected function getChildCategories($categoryArray = [])

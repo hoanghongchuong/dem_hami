@@ -190,11 +190,11 @@
 				    	</label>
 				    </div> -->
 			    	
-				    <!-- <div class="form-group">
+				    <div class="form-group">
 					    <label>
-				        	<input type="checkbox" name="spbc" {!! (!isset($data->spbc) || $data->spbc==1)?'checked="checked"':'' !!}> Sale off
+				        	<input type="checkbox" name="spbc" {!! (!isset($data->spbc) || $data->spbc==1)?'checked="checked"':'' !!}> Bán chạy
 				    	</label>
-				    </div> -->
+				    </div>
 			    </div>
 			    <div class="clearfix"></div>
 			    <div class="box-footer">
