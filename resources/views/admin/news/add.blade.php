@@ -55,8 +55,8 @@
 									</div>
 									
 									<div class="clearfix"></div>
-									
-									<div class="form-group hidden">
+									@if($_GET['type']=='tin-tuc')
+									<div class="form-group">
 								      	<label for="ten">Danh mục cha</label>
 								      	<select name="txtNewsCate" class="form-control">
 
@@ -64,7 +64,7 @@
 								      		<?php cate_parent($parent,0,"--",0) ?>
 								      	</select>
 									</div>
-									
+									@endif
 							    	<div class="form-group @if ($errors->first('txtName')!='') has-error @endif">
 								      	<label for="ten">Tên</label>
 								      	<input type="text" id="txtName" name="txtName" value=""  class="form-control" />

@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use Carbon\Carbon;
 use App\Products;
 use App\ProductCate;
+use App\NewsCate;
 use App\NewsLetter;
 use App\Recruitment;
 use DB,Cache,Mail, Session;
@@ -57,7 +58,7 @@ class IndexController extends Controller {
 		$productSaleOf = DB::table('products')->where('status',1)->where('spbc',1)->where('com','san-pham')->take(4)->orderBy('id','desc')->get();
 		$productNew = DB::table('products')->where('status',1)->where('com','san-pham')->take(4)->orderBy('id','desc')->get();
 		$categories_home = ProductCate::where('status',1)->where('com','san-pham')->where('parent_id',0)->where('noibat',1)->orderBy('id','desc')->get();
-		
+		$newsCate = NewsCate::where('parent_id',0)->where('com','tin-tuc')->orderBy('id','desc')->get();
 		$slogans = DB::table('slogan')->get();
 		$setting =DB::table('setting')->select()->where('id',1)->get()->first();
 		$about = DB::table('about')->where('com','gioi-thieu')->first();
@@ -67,7 +68,7 @@ class IndexController extends Controller {
 		$com = 'index';
 		// End cấu hình SEO
 		$img_share = asset('upload/hinhanh/'.$setting->photo);
-		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','productHot','categories_home','slogans','news','about','productSaleOf','productNew'));
+		return view('templates.index_tpl', compact('com','keyword','description','title','img_share','productHot','categories_home','slogans','news','about','productSaleOf','productNew','newsCate'));
 	}
 	public function getProduct(Request $req)
 	{
@@ -280,7 +281,7 @@ class IndexController extends Controller {
 	{
 		//Tìm article thông qua mã id tương ứng
 		$tintuc_cate = DB::table('news_categories')->select()->where('status',1)->where('com','tin-tuc')->where('alias',$id)->get()->first();
-		$cateNews = DB::table('news_categories')->where('com','tin-tuc')->get();
+		$cateNews = NewsCate::where('com','tin-tuc')->get();
 		if(!empty($tintuc_cate)){
 			$tintuc = DB::table('news')->select()->where('status',1)->where('cate_id',$tintuc_cate->id)->orderBy('id','desc')->paginate(5);
 			$tintuc_moinhat_detail = DB::table('news')->select()->where('status',1)->where('com','tin-tuc')->orderby('created_at','desc')->take(6)->get();

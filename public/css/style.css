@@ -518,6 +518,13 @@ header{
 .des-news{
 	font-size: 15px;
 	text-align: justify;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    height: 84px;
+    line-height: 1.4;   
 }
 .img-avatar{
 	width: 100%;

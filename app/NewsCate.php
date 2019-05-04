@@ -10,4 +10,8 @@ class NewsCate extends Model {
 
 	public $timestamps = true;
 
+	public function posts()
+	{
+		return $this->hasMany('App\News','cate_id')->take(4)->orderBy('id','desc')->get();
+	}
 }

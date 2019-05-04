@@ -2,10 +2,10 @@
 -- version 4.8.5
 -- https://www.phpmyadmin.net/
 --
--- Máy chủ: 127.0.0.1
--- Thời gian đã tạo: Th5 03, 2019 lúc 03:13 PM
--- Phiên bản máy phục vụ: 10.1.38-MariaDB
--- Phiên bản PHP: 7.2.17
+-- Host: 127.0.0.1
+-- Generation Time: May 04, 2019 at 09:57 AM
+-- Server version: 10.1.38-MariaDB
+-- PHP Version: 7.2.17
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -19,13 +19,13 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Cơ sở dữ liệu: `hami`
+-- Database: `hami`
 --
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `about`
+-- Table structure for table `about`
 --
 
 CREATE TABLE `about` (
@@ -48,21 +48,23 @@ CREATE TABLE `about` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `about`
+-- Dumping data for table `about`
 --
 
 INSERT INTO `about` (`id`, `user_id`, `name`, `alias`, `photo`, `background`, `mota`, `link`, `content`, `status`, `title`, `keyword`, `description`, `com`, `created_at`, `updated_at`) VALUES
 (1, 8, 'Tầm nhìn', 'tam-nhin', '1533089542_about-1.jpg', NULL, NULL, NULL, '<p>Tầm nh&igrave;n của ch&uacute;ng t&ocirc;i được ho&agrave;n thiện khi mỗi gia đ&igrave;nh tr&ecirc;n đất nước Việt Nam đều c&oacute; &iacute;t nhất một sản phẩm nội thất của Vidcom</p>', 0, NULL, NULL, NULL, 'tam-nhin', '2018-08-01 02:12:22', '2018-07-31 19:12:22'),
 (2, 8, 'Sứ mệnh', 'su-menh', '1533089598_about-2.jpg', NULL, NULL, NULL, '<p>Sứ mệnh của Vidcom l&agrave; cung cấp c&aacute;c sản phẩm nội thất c&oacute; thiết kế v&agrave; c&ocirc;ng năng ph&ugrave; hợp đi k&egrave;m với gi&aacute; cả phải chăng. Ch&uacute;ng t&ocirc;i cũng cung cấp dịch vụ tư vấn thiết kế nội thất v&agrave; vận chuyển sản phẩm đến từng gia đ&igrave;nh Việt Nam th&ocirc;ng qua c&aacute;c dịch vụ vận chuyển đa dạng.</p>', 0, NULL, NULL, NULL, 'su-menh', '2018-08-01 02:13:18', '2018-07-31 19:13:18'),
-(3, 8, 'Hợp tác xã tổng hợp chè thành công Xưởng sản xuất chè sạch an toàn', 'hop-tac-xa-tong-hop-che-thanh-cong-xuong-san-xuat-che-sach-an-toan', '1552096923_about.jpg', '1542881433_img_intro2.png', '<p>Hợp t&aacute;c x&atilde; tổng hợp ch&egrave; th&agrave;nh c&ocirc;ng Xưởng sản xuất ch&egrave; sạch an to&agrave;n</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>', NULL, '<p class=\"text-center\" style=\"text-align: left;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n<p class=\"text-center\" style=\"text-align: left;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n<p class=\"text-center\" style=\"text-align: left;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>', 0, NULL, NULL, NULL, 'gioi-thieu', '2019-03-09 03:46:21', '2019-03-09 03:46:21'),
+(3, 8, 'Giới thiệu', 'gioi-thieu', '1552096923_about.jpg', '1542881433_img_intro2.png', NULL, NULL, '<p class=\"text-center\" style=\"text-align: left;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n<p class=\"text-center\" style=\"text-align: left;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>\r\n<p class=\"text-center\" style=\"text-align: left;\">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>', 0, NULL, NULL, NULL, 'gioi-thieu', '2019-05-04 03:09:45', '2019-05-04 03:09:45'),
+(8, 8, 'Hỗ trợ', 'ho-tro', NULL, NULL, NULL, NULL, '<p>Nội dung hỗ trợ</p>', 0, NULL, NULL, NULL, 'ho-tro', '2019-05-04 03:11:59', '2019-05-04 03:11:59'),
 (6, 8, NULL, '', NULL, NULL, NULL, NULL, '<p>Nội dung b&aacute;o gi&aacute;</p>', 0, NULL, NULL, NULL, 'bao-gia', '2018-11-22 02:22:11', '2018-11-22 02:22:11'),
 (4, 8, 'Giá trị cốt lõi', 'gia-tri-cot-loi', NULL, NULL, NULL, NULL, '<h3 class=\"vk-about__title-sub\">CON NGƯỜI</h3>\r\n<p>Đại diện cho nền tảng của thương hiệu UMA. Điều n&agrave;y được thể hiện bằng việc ch&uacute;ng t&ocirc;i quan t&acirc;m đến c&aacute;ch sống v&agrave; l&agrave;m việc của kh&aacute;ch h&agrave;ng cũng như cung cấp cho mỗi nh&acirc;n vi&ecirc;n một m&ocirc;i trường l&agrave;m việc l&agrave;nh mạnh, cơ hội để học hỏi v&agrave; ph&aacute;t triển. UMA cũng đ&aacute;nh gi&aacute; cao sự đa dạng v&agrave; kh&aacute;c biệt văn h&oacute;a, nhằm phấn đấu cải thiện chất lượng cuộc sống của cộng đồng.</p>\r\n<h3 class=\"vk-about__title-sub\">THIẾT KẾ</h3>\r\n<p>L&agrave; đặc điểm tạo n&ecirc;n sự kh&aacute;c biệt của ch&uacute;ng t&ocirc;i. Những thiết kế được li&ecirc;n tục ph&aacute;t triển v&agrave; khuyến kh&iacute;ch tự đ&aacute;nh gi&aacute; để ho&agrave;n thiện. C&aacute;c xu hướng hiện đại lu&ocirc;n được phản &aacute;nh trong thiết kế của Vidcom, nhưng cũng đảm bảo kh&ocirc;ng mất đi n&eacute;t văn h&oacute;a Việt Nam. Điều n&agrave;y gi&uacute;p Vidcom trở th&agrave;nh một trong những c&ocirc;ng ty thiết kế nội thất chủ đạo ở Việt Nam.</p>\r\n<h3 class=\"vk-about__title-sub\">DỊCH VỤ</h3>\r\n<p>Lu&ocirc;n được đảm bảo t&iacute;nh tối ưu, lấy kh&aacute;ch h&agrave;ng l&agrave;m trọng t&acirc;m v&agrave; thể hiện sự thấu hiểu nhu cầu của kh&aacute;ch h&agrave;ng trong việc giao h&agrave;ng, thiết kế nội thất, lắp đặt cũng như tư vấn chuy&ecirc;n nghiệp tại cửa h&agrave;ng lẫn tr&ecirc;n website.</p>\r\n<h3 class=\"vk-about__title-sub\">SỰ PH&Aacute;T TRIỂN</h3>\r\n<p>Bất kể Vidcom muốn x&acirc;y dựng c&aacute;c thiết kế, dẫn đầu xu thế cạnh tranh hoặc đảm bảo tương lai th&igrave; Vidcom vẫn lu&ocirc;n lu&ocirc;n cần phải ph&aacute;t triển.</p>', 0, NULL, NULL, NULL, 'cot-loi', '2018-08-01 02:17:25', '2018-07-31 19:17:25'),
-(5, 8, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 'taisao', '2018-08-01 00:29:56', '2018-08-01 00:29:56');
+(5, 8, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, NULL, NULL, NULL, 'taisao', '2018-08-01 00:29:56', '2018-08-01 00:29:56'),
+(7, 8, 'Dịch vụ', 'dich-vu', NULL, NULL, NULL, NULL, '<p>Nội dung chi tiết</p>', 0, NULL, NULL, NULL, 'dich-vu', '2019-05-04 03:10:33', '2019-05-04 03:10:33');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `bank_account`
+-- Table structure for table `bank_account`
 --
 
 CREATE TABLE `bank_account` (
@@ -74,7 +76,7 @@ CREATE TABLE `bank_account` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `bank_account`
+-- Dumping data for table `bank_account`
 --
 
 INSERT INTO `bank_account` (`id`, `img`, `info`, `created_at`, `updated_at`) VALUES
@@ -84,7 +86,7 @@ INSERT INTO `bank_account` (`id`, `img`, `info`, `created_at`, `updated_at`) VAL
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `banner`
+-- Table structure for table `banner`
 --
 
 CREATE TABLE `banner` (
@@ -104,7 +106,7 @@ CREATE TABLE `banner` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `banner_content`
+-- Table structure for table `banner_content`
 --
 
 CREATE TABLE `banner_content` (
@@ -121,7 +123,7 @@ CREATE TABLE `banner_content` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `banner_position`
+-- Table structure for table `banner_position`
 --
 
 CREATE TABLE `banner_position` (
@@ -132,7 +134,7 @@ CREATE TABLE `banner_position` (
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
--- Đang đổ dữ liệu cho bảng `banner_position`
+-- Dumping data for table `banner_position`
 --
 
 INSERT INTO `banner_position` (`id`, `name`, `created_at`, `updated_at`) VALUES
@@ -147,7 +149,7 @@ INSERT INTO `banner_position` (`id`, `name`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `bills`
+-- Table structure for table `bills`
 --
 
 CREATE TABLE `bills` (
@@ -171,7 +173,7 @@ CREATE TABLE `bills` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `campaigns`
+-- Table structure for table `campaigns`
 --
 
 CREATE TABLE `campaigns` (
@@ -189,7 +191,7 @@ CREATE TABLE `campaigns` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `campaign_cards`
+-- Table structure for table `campaign_cards`
 --
 
 CREATE TABLE `campaign_cards` (
@@ -205,7 +207,7 @@ CREATE TABLE `campaign_cards` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `chinhanh`
+-- Table structure for table `chinhanh`
 --
 
 CREATE TABLE `chinhanh` (
@@ -221,7 +223,7 @@ CREATE TABLE `chinhanh` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `chinhanh`
+-- Dumping data for table `chinhanh`
 --
 
 INSERT INTO `chinhanh` (`id`, `name`, `website`, `phone`, `address`, `map`, `photo`, `created_at`, `updated_at`) VALUES
@@ -231,7 +233,7 @@ INSERT INTO `chinhanh` (`id`, `name`, `website`, `phone`, `address`, `map`, `pho
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `colors`
+-- Table structure for table `colors`
 --
 
 CREATE TABLE `colors` (
@@ -243,7 +245,7 @@ CREATE TABLE `colors` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `colors`
+-- Dumping data for table `colors`
 --
 
 INSERT INTO `colors` (`id`, `name`, `code`, `created_at`, `updated_at`) VALUES
@@ -256,7 +258,7 @@ INSERT INTO `colors` (`id`, `name`, `code`, `created_at`, `updated_at`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `contacts`
+-- Table structure for table `contacts`
 --
 
 CREATE TABLE `contacts` (
@@ -276,7 +278,7 @@ CREATE TABLE `contacts` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `counter`
+-- Table structure for table `counter`
 --
 
 CREATE TABLE `counter` (
@@ -288,7 +290,7 @@ CREATE TABLE `counter` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `district`
+-- Table structure for table `district`
 --
 
 CREATE TABLE `district` (
@@ -300,7 +302,7 @@ CREATE TABLE `district` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `district`
+-- Dumping data for table `district`
 --
 
 INSERT INTO `district` (`id`, `district_name`, `province_id`, `created_at`, `updated_at`) VALUES
@@ -312,7 +314,7 @@ INSERT INTO `district` (`id`, `district_name`, `province_id`, `created_at`, `upd
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `feedback`
+-- Table structure for table `feedback`
 --
 
 CREATE TABLE `feedback` (
@@ -326,7 +328,7 @@ CREATE TABLE `feedback` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `feedback`
+-- Dumping data for table `feedback`
 --
 
 INSERT INTO `feedback` (`id`, `name`, `photo`, `position`, `content`, `created_at`, `updated_at`) VALUES
@@ -337,7 +339,7 @@ INSERT INTO `feedback` (`id`, `name`, `photo`, `position`, `content`, `created_a
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `footer`
+-- Table structure for table `footer`
 --
 
 CREATE TABLE `footer` (
@@ -355,7 +357,7 @@ CREATE TABLE `footer` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `gioithieu`
+-- Table structure for table `gioithieu`
 --
 
 CREATE TABLE `gioithieu` (
@@ -374,7 +376,7 @@ CREATE TABLE `gioithieu` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `gioithieu`
+-- Dumping data for table `gioithieu`
 --
 
 INSERT INTO `gioithieu` (`id`, `name`, `alias`, `image`, `mota`, `content`, `title`, `keyword`, `description`, `status`, `created_at`, `updated_at`) VALUES
@@ -385,7 +387,7 @@ INSERT INTO `gioithieu` (`id`, `name`, `alias`, `image`, `mota`, `content`, `tit
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `images`
+-- Table structure for table `images`
 --
 
 CREATE TABLE `images` (
@@ -404,7 +406,7 @@ CREATE TABLE `images` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `images`
+-- Dumping data for table `images`
 --
 
 INSERT INTO `images` (`id`, `product_id`, `news_id`, `name`, `alias`, `photo`, `status`, `image_path`, `alt`, `stt`, `created_at`, `updated_at`) VALUES
@@ -420,7 +422,7 @@ INSERT INTO `images` (`id`, `product_id`, `news_id`, `name`, `alias`, `photo`, `
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `lienket`
+-- Table structure for table `lienket`
 --
 
 CREATE TABLE `lienket` (
@@ -442,7 +444,7 @@ CREATE TABLE `lienket` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `lienket`
+-- Dumping data for table `lienket`
 --
 
 INSERT INTO `lienket` (`id`, `user_id`, `name`, `link`, `photo`, `document`, `photo2`, `mota`, `content`, `status`, `noibat`, `com`, `stt`, `created_at`, `updated_at`) VALUES
@@ -453,7 +455,7 @@ INSERT INTO `lienket` (`id`, `user_id`, `name`, `link`, `photo`, `document`, `ph
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `menu`
+-- Table structure for table `menu`
 --
 
 CREATE TABLE `menu` (
@@ -474,7 +476,7 @@ CREATE TABLE `menu` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `menu`
+-- Dumping data for table `menu`
 --
 
 INSERT INTO `menu` (`id`, `name`, `alias`, `photo`, `status`, `lever`, `parent_id`, `title`, `keyword`, `description`, `com`, `stt`, `created_at`, `updated_at`) VALUES
@@ -499,7 +501,7 @@ INSERT INTO `menu` (`id`, `name`, `alias`, `photo`, `status`, `lever`, `parent_i
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `migrations`
+-- Table structure for table `migrations`
 --
 
 CREATE TABLE `migrations` (
@@ -508,7 +510,7 @@ CREATE TABLE `migrations` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `migrations`
+-- Dumping data for table `migrations`
 --
 
 INSERT INTO `migrations` (`migration`, `batch`) VALUES
@@ -534,7 +536,7 @@ INSERT INTO `migrations` (`migration`, `batch`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `news`
+-- Table structure for table `news`
 --
 
 CREATE TABLE `news` (
@@ -560,19 +562,22 @@ CREATE TABLE `news` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `news`
+-- Dumping data for table `news`
 --
 
 INSERT INTO `news` (`id`, `cate_id`, `user_id`, `name`, `alias`, `photo`, `background`, `mota`, `content`, `status`, `noibat`, `home`, `title`, `keyword`, `description`, `com`, `stt`, `created_at`, `updated_at`) VALUES
-(7, 0, 8, 'Tin tức 4', 'tin-tuc-4', '1553592895_news1.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 4, '2019-03-26 09:34:55', '2019-03-26 09:34:55'),
-(5, 0, 8, 'Tin tức 2', 'tin-tuc-2', '1553592908_news2.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>', 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 2, '2019-03-26 09:35:08', '2019-03-26 09:35:08'),
-(6, 0, 8, 'Tin tức 3', 'tin-tuc-3', '1553592914_news3.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 3, '2019-03-26 09:35:14', '2019-03-26 09:35:14'),
-(4, 0, 8, 'Tin tức 1', 'tin-tuc-1', '1553592919_news4.jpg', '', NULL, NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 1, '2019-03-26 09:35:19', '2019-03-26 09:35:19');
+(7, 4, 8, 'Tin tức 4', 'tin-tuc-4', '1553592895_news1.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', 'Nhân dịp Xuân mới 2019 và Tết cổ truyền Kỷ Hợi, Công ty Cổ phần Thiết bị Cơ điện và Xây dựng xin kính chúc Quý khách hàng, cán bộ công nhân viên và cổ đông Công ty một năm mới Sức Khỏe - Hạnh Phúc - An Khang - Thịnh Vượng đạt được nhiều thắng lợi mới\r\n', 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 4, '2019-05-04 07:23:32', '2019-05-04 07:06:12'),
+(5, 4, 8, 'Tin tức 2', 'tin-tuc-2', '1553592908_news2.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.', '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&nbsp;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>\r\n<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>', 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 2, '2019-05-04 07:42:12', '2019-05-04 07:42:12'),
+(6, 4, 8, 'Tin tức 3', 'tin-tuc-3', '1553592914_news3.jpg', '', 'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.', NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 3, '2019-05-04 07:06:21', '2019-05-04 07:06:21'),
+(4, 4, 8, 'Tin tức 1', 'tin-tuc-1', '1553592919_news4.jpg', '', NULL, NULL, 1, 1, 0, NULL, NULL, NULL, 'tin-tuc', 1, '2019-05-04 07:42:16', '2019-05-04 07:42:16'),
+(8, 1, 8, 'Bài viết bảng giá 1', 'bai-viet-bang-gia-1', '1556938389_p1.jpg', '', NULL, '<p>Nội dung chi tiết</p>', 1, 1, 0, NULL, NULL, NULL, 'bang-gia', 1, '2019-05-04 03:25:53', '2019-05-04 03:25:53'),
+(9, 2, 8, 'Bài viết bảng giá 2', 'bai-viet-bang-gia-2', '1556940371_p1.jpg', '', NULL, NULL, 1, 1, 0, NULL, NULL, NULL, 'bang-gia', 2, '2019-05-04 03:26:11', '2019-05-04 03:26:11'),
+(10, 4, 8, 'tin tuc demo moi', 'tin-tuc-demo-moi', '1556955677_p1.jpg', '', NULL, NULL, 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 5, '2019-05-04 07:41:17', '2019-05-04 07:41:17');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `newsletter`
+-- Table structure for table `newsletter`
 --
 
 CREATE TABLE `newsletter` (
@@ -594,7 +599,7 @@ CREATE TABLE `newsletter` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `newsletter`
+-- Dumping data for table `newsletter`
 --
 
 INSERT INTO `newsletter` (`id`, `user_id`, `name`, `link`, `email`, `phone`, `photo`, `mota`, `content`, `status`, `noibat`, `com`, `stt`, `created_at`, `updated_at`) VALUES
@@ -603,7 +608,7 @@ INSERT INTO `newsletter` (`id`, `user_id`, `name`, `link`, `email`, `phone`, `ph
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `news_categories`
+-- Table structure for table `news_categories`
 --
 
 CREATE TABLE `news_categories` (
@@ -625,10 +630,21 @@ CREATE TABLE `news_categories` (
   `updated_at` timestamp NOT NULL DEFAULT '0000-00-00 00:00:00'
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `news_categories`
+--
+
+INSERT INTO `news_categories` (`id`, `name`, `alias`, `photo`, `mota`, `status`, `lever`, `parent_id`, `title`, `keyword`, `description`, `com`, `stt`, `created_at`, `background`, `updated_at`) VALUES
+(1, 'Danh mục bảng giá 1', 'danh-muc-bang-gia-1', '', NULL, 1, 0, 0, NULL, NULL, NULL, 'bang-gia', 1, '2019-05-04 02:51:09', '', '2019-05-04 02:51:09'),
+(2, 'Danh mục bảng giá 2', 'danh-muc-bang-gia-2', '', NULL, 1, 0, 0, NULL, NULL, NULL, 'bang-gia', 2, '2019-05-04 02:51:16', '', '2019-05-04 02:51:16'),
+(3, 'Danh mục bảng giá 3', 'danh-muc-bang-gia-3', '', NULL, 1, 0, 0, NULL, NULL, NULL, 'bang-gia', 3, '2019-05-04 02:52:05', '', '2019-05-04 02:52:05'),
+(4, 'Khuyến mại', 'khuyen-mai', '', NULL, 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 1, '2019-05-04 07:03:56', '', '2019-05-04 07:03:56'),
+(5, 'Tin sản phẩm', 'tin-san-pham', '', NULL, 1, 0, 0, NULL, NULL, NULL, 'tin-tuc', 2, '2019-05-04 07:04:12', '', '2019-05-04 07:04:12');
+
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `pages`
+-- Table structure for table `pages`
 --
 
 CREATE TABLE `pages` (
@@ -650,7 +666,7 @@ CREATE TABLE `pages` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `partner`
+-- Table structure for table `partner`
 --
 
 CREATE TABLE `partner` (
@@ -669,7 +685,7 @@ CREATE TABLE `partner` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `partner`
+-- Dumping data for table `partner`
 --
 
 INSERT INTO `partner` (`id`, `name`, `email`, `phone`, `url`, `photo`, `desc`, `content`, `com`, `status`, `created_at`, `updated_at`) VALUES
@@ -679,7 +695,7 @@ INSERT INTO `partner` (`id`, `name`, `email`, `phone`, `url`, `photo`, `desc`, `
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `password_resets`
+-- Table structure for table `password_resets`
 --
 
 CREATE TABLE `password_resets` (
@@ -691,7 +707,7 @@ CREATE TABLE `password_resets` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `products`
+-- Table structure for table `products`
 --
 
 CREATE TABLE `products` (
@@ -731,22 +747,22 @@ CREATE TABLE `products` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `products`
+-- Dumping data for table `products`
 --
 
 INSERT INTO `products` (`id`, `user_id`, `cate_id`, `code`, `color_id`, `stt`, `name`, `alias`, `photo`, `price`, `sale`, `price_old`, `mota`, `content`, `thuonghieu`, `tinhtrang`, `baohanh`, `properties`, `model`, `namsanxuat`, `ratepoint`, `quatang`, `huongdan`, `vanchuyen`, `noibat`, `spbc`, `com`, `status`, `title`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 8, 6, NULL, 'null', 1, 'Sản phẩm demo 1', 'san-pham-demo-1', '1553591848_tap3.jpg', 400000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-04-19 10:03:32', '2019-04-19 10:03:32'),
+(1, 8, 6, NULL, 'null', 1, 'Sản phẩm demo 1', 'san-pham-demo-1', '1553591848_tap3.jpg', 400000, 0, 0, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 'san-pham', 1, NULL, NULL, NULL, '2019-05-04 04:19:08', '2019-05-04 04:19:08'),
 (2, 8, 2, NULL, 'null', 2, 'Sản phẩm demo 2', 'san-pham-demo-2', '1553591682_ban1.jpg', 4000000, 0, 5000000, '<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&nbsp;</p>', NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:20:25', '2019-03-27 03:20:25'),
 (3, 8, 5, NULL, 'null', 3, 'Sản phẩm demo 3', 'san-pham-demo-3', '1553591837_giuong1.jpg', 400000, 0, 500000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-04-19 09:50:57', '2019-04-19 09:50:57'),
-(4, 8, 6, NULL, 'null', 4, 'Sản phẩm tủ 1', 'san-pham-tu-1', '1553656668_tu1.jpg', 1500000, 0, 20000000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-04-19 10:03:05', '2019-04-19 10:03:05'),
-(5, 0, 2, NULL, NULL, 5, 'Bàn trang điểm 2', 'ban-trang-diem-2', '1553656808_ban2.jpg', 2000000, 0, 3000000, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:20:08', '2019-03-27 03:20:08'),
-(6, 8, 1, NULL, 'null', 6, 'Táp đầu giường demo', 'tap-dau-giuong-demo', '1553656858_tap4.jpg', 400000, 0, 500000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:22:05', '2019-03-27 03:22:05'),
-(7, 0, 4, NULL, NULL, 7, 'Giường ngủ 3', 'giuong-ngu-3', '1553656968_giuong3.jpg', 1500000, 0, 2000000, NULL, NULL, NULL, 1, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-03-27 03:22:48', '2019-03-27 03:22:48');
+(4, 8, 6, NULL, 'null', 4, 'Sản phẩm tủ 1sd fsdf sdf sdf sdf sdf sdf sdf sdf', 'san-pham-tu-1sd-fsdf-sdf-sdf-sdf-sdf-sdf-sdf-sdf', '1556936247_p2.jpg', 1500000, 0, 20000000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 0, 'san-pham', 1, NULL, NULL, NULL, '2019-05-04 04:26:34', '2019-05-04 04:26:34'),
+(5, 8, 2, NULL, 'null', 5, 'Bàn trang điểm 2', 'ban-trang-diem-2', '1553656808_ban2.jpg', 2000000, 0, 3000000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 'san-pham', 1, NULL, NULL, NULL, '2019-05-04 04:19:00', '2019-05-04 04:19:00'),
+(6, 8, 8, NULL, 'null', 6, 'chăn ga 1', 'chan-ga-1', '1553656858_tap4.jpg', 400000, 0, 500000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 1, 1, 'san-pham', 1, NULL, NULL, NULL, '2019-05-04 04:47:33', '2019-05-04 04:47:33'),
+(7, 8, 7, NULL, 'null', 7, 'Giường ngủ 3', 'giuong-ngu-3', '1556936228_p1.jpg', 1500000, 0, 2000000, NULL, NULL, NULL, 0, NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL, 0, 1, 'san-pham', 1, NULL, NULL, NULL, '2019-05-04 04:46:42', '2019-05-04 04:46:42');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `product_categories`
+-- Table structure for table `product_categories`
 --
 
 CREATE TABLE `product_categories` (
@@ -769,24 +785,27 @@ CREATE TABLE `product_categories` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `product_categories`
+-- Dumping data for table `product_categories`
 --
 
 INSERT INTO `product_categories` (`id`, `parent_id`, `stt`, `name`, `alias`, `photo`, `noibat`, `mota`, `status`, `lever`, `com`, `title`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
-(1, 0, 1, 'Nội thất phòng thờ', 'noi-that-phong-tho', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-04-19 07:39:57', '2019-04-19 07:39:57'),
-(2, 0, 2, 'Nội thất phòng ăn', 'noi-that-phong-an', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-04-19 07:39:48', '2019-04-19 07:39:48'),
-(3, 0, 3, 'Nội thất phòng ngủ', 'noi-that-phong-ngu', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-04-19 07:39:35', '2019-04-19 07:39:35'),
-(4, 0, 4, 'Nội thất phòng khách', 'noi-that-phong-khach', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-04-19 07:39:19', '2019-04-19 07:39:19'),
-(5, 4, 5, 'Bàn ghế', 'ban-ghe', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-04-19 08:09:03', '2019-04-19 08:09:03'),
-(6, 3, 6, 'Giường ngủ', 'giuong-ngu', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-04-19 08:09:16', '2019-04-19 08:09:16'),
-(7, 3, 7, 'Tủ quần áo', 'tu-quan-ao', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-04-19 08:09:29', '2019-04-19 08:09:29'),
-(8, 4, 8, 'Kệ', 'ke', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-04-19 08:09:42', '2019-04-19 08:09:42'),
-(9, 0, 9, 'Nội thất trang trí', 'noi-that-trang-tri', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-04-19 08:11:30', '2019-04-19 08:11:30');
+(1, 0, 1, 'Chăn ga gối', 'chan-ga-goi', '', 1, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 04:36:07', '2019-05-04 04:36:07'),
+(2, 0, 2, 'Đệm hàn quốc', 'dem-han-quoc', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 02:02:14', '2019-05-04 02:02:14'),
+(3, 0, 3, 'Đệm cao su', 'dem-cao-su', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 02:02:06', '2019-05-04 02:02:06'),
+(4, 0, 4, 'Đệm lò xo', 'dem-lo-xo', '', 1, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 04:36:12', '2019-05-04 04:36:12'),
+(5, 4, 5, 'Đệm lò xo Everhome', 'dem-lo-xo-everhome', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 04:32:44', '2019-05-04 04:32:44'),
+(6, 4, 6, 'Đệm lò xo Liên Á', 'dem-lo-xo-lien-a', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 04:33:22', '2019-05-04 04:33:22'),
+(7, 4, 7, 'Đệm lò xo Dunlopillo', 'dem-lo-xo-dunlopillo', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 04:34:04', '2019-05-04 04:34:04'),
+(8, 1, 8, 'Chăn ga gối Everhome', 'chan-ga-goi-everhome', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 04:34:46', '2019-05-04 04:34:46'),
+(9, 0, 9, 'Đệm bông ép', 'dem-bong-ep', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 02:01:29', '2019-05-04 02:01:29'),
+(10, 0, 10, 'Chiếu trúc', 'chieu-truc', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 02:02:36', '2019-05-04 02:02:36'),
+(11, 0, 11, 'Chiếu điều hòa', 'chieu-dieu-hoa', '', 0, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 02:02:42', '2019-05-04 02:02:42'),
+(12, 0, 12, 'Chăn lông cừu', 'chan-long-cuu', '', 1, NULL, 1, 0, 'san-pham', NULL, NULL, NULL, '2019-05-04 04:35:40', '2019-05-04 04:35:40');
 
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `province`
+-- Table structure for table `province`
 --
 
 CREATE TABLE `province` (
@@ -804,7 +823,7 @@ CREATE TABLE `province` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `province`
+-- Dumping data for table `province`
 --
 
 INSERT INTO `province` (`id`, `name`, `tenkhongdau`, `mota_vi`, `mota_en`, `photo`, `thumb`, `stt`, `status`, `created_at`, `updated_at`) VALUES
@@ -876,7 +895,7 @@ INSERT INTO `province` (`id`, `name`, `tenkhongdau`, `mota_vi`, `mota_en`, `phot
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `recruitment`
+-- Table structure for table `recruitment`
 --
 
 CREATE TABLE `recruitment` (
@@ -893,7 +912,7 @@ CREATE TABLE `recruitment` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `setting`
+-- Table structure for table `setting`
 --
 
 CREATE TABLE `setting` (
@@ -932,7 +951,7 @@ CREATE TABLE `setting` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `setting`
+-- Dumping data for table `setting`
 --
 
 INSERT INTO `setting` (`id`, `name`, `title`, `company`, `website`, `address`, `phone`, `hotline`, `fax`, `email`, `photo`, `photo_footer`, `photo_page`, `favico`, `title_index`, `mota`, `content`, `facebook`, `twitter`, `skype`, `google`, `youtube`, `status`, `toado`, `copyright`, `iframemap`, `codechat`, `analytics`, `keyword`, `description`, `created_at`, `updated_at`) VALUES
@@ -941,7 +960,7 @@ INSERT INTO `setting` (`id`, `name`, `title`, `company`, `website`, `address`, `
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `slider`
+-- Table structure for table `slider`
 --
 
 CREATE TABLE `slider` (
@@ -964,7 +983,7 @@ CREATE TABLE `slider` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `slider`
+-- Dumping data for table `slider`
 --
 
 INSERT INTO `slider` (`id`, `user_id`, `name`, `link`, `photo`, `photo1`, `photo2`, `icon`, `mota`, `content`, `status`, `noibat`, `com`, `stt`, `created_at`, `updated_at`) VALUES
@@ -974,7 +993,7 @@ INSERT INTO `slider` (`id`, `user_id`, `name`, `link`, `photo`, `photo1`, `photo
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `slogan`
+-- Table structure for table `slogan`
 --
 
 CREATE TABLE `slogan` (
@@ -990,7 +1009,7 @@ CREATE TABLE `slogan` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `slogan`
+-- Dumping data for table `slogan`
 --
 
 INSERT INTO `slogan` (`id`, `name`, `link`, `photo`, `photo2`, `stt`, `content`, `created_at`, `updated_at`) VALUES
@@ -1001,7 +1020,7 @@ INSERT INTO `slogan` (`id`, `name`, `link`, `photo`, `photo2`, `stt`, `content`,
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `useronline`
+-- Table structure for table `useronline`
 --
 
 CREATE TABLE `useronline` (
@@ -1014,7 +1033,7 @@ CREATE TABLE `useronline` (
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `users`
+-- Table structure for table `users`
 --
 
 CREATE TABLE `users` (
@@ -1034,7 +1053,7 @@ CREATE TABLE `users` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `users`
+-- Dumping data for table `users`
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `name`, `email`, `phone`, `address`, `level`, `photo`, `status`, `remember_token`, `created_at`, `updated_at`) VALUES
@@ -1047,7 +1066,7 @@ INSERT INTO `users` (`id`, `username`, `password`, `name`, `email`, `phone`, `ad
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `video`
+-- Table structure for table `video`
 --
 
 CREATE TABLE `video` (
@@ -1063,435 +1082,435 @@ CREATE TABLE `video` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
--- Đang đổ dữ liệu cho bảng `video`
+-- Dumping data for table `video`
 --
 
 INSERT INTO `video` (`id`, `name`, `alias`, `link`, `photo`, `mota`, `content`, `created_at`, `updated_at`) VALUES
 (1, NULL, NULL, '<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/nvy3XBg-tmU\" frameborder=\"0\" allowfullscreen></iframe>', NULL, NULL, NULL, '2017-10-15 20:31:58', '2017-10-15 20:34:30');
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
--- Chỉ mục cho bảng `about`
+-- Indexes for table `about`
 --
 ALTER TABLE `about`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `bank_account`
+-- Indexes for table `bank_account`
 --
 ALTER TABLE `bank_account`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `banner`
+-- Indexes for table `banner`
 --
 ALTER TABLE `banner`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `banner_content`
+-- Indexes for table `banner_content`
 --
 ALTER TABLE `banner_content`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `banner_position`
+-- Indexes for table `banner_position`
 --
 ALTER TABLE `banner_position`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `bills`
+-- Indexes for table `bills`
 --
 ALTER TABLE `bills`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `campaigns`
+-- Indexes for table `campaigns`
 --
 ALTER TABLE `campaigns`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `campaign_cards`
+-- Indexes for table `campaign_cards`
 --
 ALTER TABLE `campaign_cards`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `chinhanh`
+-- Indexes for table `chinhanh`
 --
 ALTER TABLE `chinhanh`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `colors`
+-- Indexes for table `colors`
 --
 ALTER TABLE `colors`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `contacts`
+-- Indexes for table `contacts`
 --
 ALTER TABLE `contacts`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `counter`
+-- Indexes for table `counter`
 --
 ALTER TABLE `counter`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `district`
+-- Indexes for table `district`
 --
 ALTER TABLE `district`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `feedback`
+-- Indexes for table `feedback`
 --
 ALTER TABLE `feedback`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `footer`
+-- Indexes for table `footer`
 --
 ALTER TABLE `footer`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `gioithieu`
+-- Indexes for table `gioithieu`
 --
 ALTER TABLE `gioithieu`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `images`
+-- Indexes for table `images`
 --
 ALTER TABLE `images`
   ADD PRIMARY KEY (`id`),
   ADD KEY `images_product_id_foreign` (`product_id`);
 
 --
--- Chỉ mục cho bảng `lienket`
+-- Indexes for table `lienket`
 --
 ALTER TABLE `lienket`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `menu`
+-- Indexes for table `menu`
 --
 ALTER TABLE `menu`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `news_categories_name_unique` (`name`);
 
 --
--- Chỉ mục cho bảng `news`
+-- Indexes for table `news`
 --
 ALTER TABLE `news`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `newsletter`
+-- Indexes for table `newsletter`
 --
 ALTER TABLE `newsletter`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `news_categories`
+-- Indexes for table `news_categories`
 --
 ALTER TABLE `news_categories`
   ADD PRIMARY KEY (`id`);
 ALTER TABLE `news_categories` ADD FULLTEXT KEY `name1` (`name`);
 
 --
--- Chỉ mục cho bảng `pages`
+-- Indexes for table `pages`
 --
 ALTER TABLE `pages`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `partner`
+-- Indexes for table `partner`
 --
 ALTER TABLE `partner`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `password_resets`
+-- Indexes for table `password_resets`
 --
 ALTER TABLE `password_resets`
   ADD KEY `password_resets_email_index` (`email`),
   ADD KEY `password_resets_token_index` (`token`);
 
 --
--- Chỉ mục cho bảng `products`
+-- Indexes for table `products`
 --
 ALTER TABLE `products`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `product_categories`
+-- Indexes for table `product_categories`
 --
 ALTER TABLE `product_categories`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `province`
+-- Indexes for table `province`
 --
 ALTER TABLE `province`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `recruitment`
+-- Indexes for table `recruitment`
 --
 ALTER TABLE `recruitment`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `setting`
+-- Indexes for table `setting`
 --
 ALTER TABLE `setting`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `slider`
+-- Indexes for table `slider`
 --
 ALTER TABLE `slider`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `slogan`
+-- Indexes for table `slogan`
 --
 ALTER TABLE `slogan`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `useronline`
+-- Indexes for table `useronline`
 --
 ALTER TABLE `useronline`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `users`
+-- Indexes for table `users`
 --
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id`),
   ADD UNIQUE KEY `users_username_unique` (`username`);
 
 --
--- Chỉ mục cho bảng `video`
+-- Indexes for table `video`
 --
 ALTER TABLE `video`
   ADD PRIMARY KEY (`id`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
+-- AUTO_INCREMENT for dumped tables
 --
 
 --
--- AUTO_INCREMENT cho bảng `about`
+-- AUTO_INCREMENT for table `about`
 --
 ALTER TABLE `about`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT cho bảng `bank_account`
+-- AUTO_INCREMENT for table `bank_account`
 --
 ALTER TABLE `bank_account`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `banner`
+-- AUTO_INCREMENT for table `banner`
 --
 ALTER TABLE `banner`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `banner_content`
+-- AUTO_INCREMENT for table `banner_content`
 --
 ALTER TABLE `banner_content`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `banner_position`
+-- AUTO_INCREMENT for table `banner_position`
 --
 ALTER TABLE `banner_position`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
--- AUTO_INCREMENT cho bảng `bills`
+-- AUTO_INCREMENT for table `bills`
 --
 ALTER TABLE `bills`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `campaigns`
+-- AUTO_INCREMENT for table `campaigns`
 --
 ALTER TABLE `campaigns`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `campaign_cards`
+-- AUTO_INCREMENT for table `campaign_cards`
 --
 ALTER TABLE `campaign_cards`
   MODIFY `id` int(10) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `chinhanh`
+-- AUTO_INCREMENT for table `chinhanh`
 --
 ALTER TABLE `chinhanh`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT cho bảng `colors`
+-- AUTO_INCREMENT for table `colors`
 --
 ALTER TABLE `colors`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
--- AUTO_INCREMENT cho bảng `contacts`
+-- AUTO_INCREMENT for table `contacts`
 --
 ALTER TABLE `contacts`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `counter`
+-- AUTO_INCREMENT for table `counter`
 --
 ALTER TABLE `counter`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `district`
+-- AUTO_INCREMENT for table `district`
 --
 ALTER TABLE `district`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
--- AUTO_INCREMENT cho bảng `feedback`
+-- AUTO_INCREMENT for table `feedback`
 --
 ALTER TABLE `feedback`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `footer`
+-- AUTO_INCREMENT for table `footer`
 --
 ALTER TABLE `footer`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `gioithieu`
+-- AUTO_INCREMENT for table `gioithieu`
 --
 ALTER TABLE `gioithieu`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `images`
+-- AUTO_INCREMENT for table `images`
 --
 ALTER TABLE `images`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
--- AUTO_INCREMENT cho bảng `lienket`
+-- AUTO_INCREMENT for table `lienket`
 --
 ALTER TABLE `lienket`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `menu`
+-- AUTO_INCREMENT for table `menu`
 --
 ALTER TABLE `menu`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=32;
 
 --
--- AUTO_INCREMENT cho bảng `news`
+-- AUTO_INCREMENT for table `news`
 --
 ALTER TABLE `news`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
--- AUTO_INCREMENT cho bảng `newsletter`
+-- AUTO_INCREMENT for table `newsletter`
 --
 ALTER TABLE `newsletter`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `news_categories`
+-- AUTO_INCREMENT for table `news_categories`
 --
 ALTER TABLE `news_categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
--- AUTO_INCREMENT cho bảng `pages`
+-- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `partner`
+-- AUTO_INCREMENT for table `partner`
 --
 ALTER TABLE `partner`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
--- AUTO_INCREMENT cho bảng `products`
+-- AUTO_INCREMENT for table `products`
 --
 ALTER TABLE `products`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
--- AUTO_INCREMENT cho bảng `product_categories`
+-- AUTO_INCREMENT for table `product_categories`
 --
 ALTER TABLE `product_categories`
-  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
+  MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
--- AUTO_INCREMENT cho bảng `province`
+-- AUTO_INCREMENT for table `province`
 --
 ALTER TABLE `province`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 
 --
--- AUTO_INCREMENT cho bảng `recruitment`
+-- AUTO_INCREMENT for table `recruitment`
 --
 ALTER TABLE `recruitment`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `setting`
+-- AUTO_INCREMENT for table `setting`
 --
 ALTER TABLE `setting`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
--- AUTO_INCREMENT cho bảng `slider`
+-- AUTO_INCREMENT for table `slider`
 --
 ALTER TABLE `slider`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `slogan`
+-- AUTO_INCREMENT for table `slogan`
 --
 ALTER TABLE `slogan`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
--- AUTO_INCREMENT cho bảng `useronline`
+-- AUTO_INCREMENT for table `useronline`
 --
 ALTER TABLE `useronline`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
 
 --
--- AUTO_INCREMENT cho bảng `users`
+-- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
--- AUTO_INCREMENT cho bảng `video`
+-- AUTO_INCREMENT for table `video`
 --
 ALTER TABLE `video`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
